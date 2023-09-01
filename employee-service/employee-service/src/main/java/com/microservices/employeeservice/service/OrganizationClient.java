@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface OrganizationClient {
     @Operation(summary = "Get Organization By Code", description = "Get a organization by the code")
     @ApiResponse(responseCode = "200", description = "OK")
-    @GetMapping("/code/{organizationCode}")
+    @GetMapping("/api/organizations/code/{organizationCode}")
     OrganizationDto getOrganizationByCode(@PathVariable(name = "organizationCode") String organizationCode);
 }
